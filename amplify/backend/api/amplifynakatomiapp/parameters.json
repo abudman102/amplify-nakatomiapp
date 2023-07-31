@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "amplifynakatomiapp",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authamplifynakatomiappa9178b2f",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

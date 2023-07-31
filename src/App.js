@@ -8,8 +8,24 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react";
+import { API, Amplify, graphqlOperation } from 'aws-amplify';
+import { createTodo, updateTodo, deleteTodo } from './graphql/mutations';
 
-function App({ signOut }) {
+import awsExports from "./aws-exports";
+import { useEffect } from "react";
+Amplify.configure(awsExports);
+
+function App({ signOut, user }) {
+  useEffect(() => {
+    async function createTodoItem() {
+      const todo = { name: "My third todo", description: "test!" };
+
+      await API.graphql(graphqlOperation(createTodo, { input: todo }));
+    }
+
+    createTodoItem();
+  }, []);
+
   return (
     <View className="App">
       <Card>
