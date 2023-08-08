@@ -17,6 +17,9 @@
       },
       "api": {
         "amplifynakatomiapp": {}
+      },
+      "storage": {
+        "fileupload": {}
       }
     }
   }

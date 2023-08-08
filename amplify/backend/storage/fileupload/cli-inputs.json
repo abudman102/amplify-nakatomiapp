@@ -1,0 +1,13 @@
+{
+  "resourceName": "fileupload",
+  "policyUUID": "f6863537",
+  "bucketName": "amplifynakatomiappa186c45e6ecb410dac4f33cd9ae4b",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
